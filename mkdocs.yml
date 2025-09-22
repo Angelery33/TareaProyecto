@@ -1,0 +1,58 @@
+site_name: My Docs
+site_description: Guia de scripts de Gradle, directoris de codi fint i AndroidManifest
+site_author: Angel Cantero
+
+
+
+theme:
+  name: material
+  language: ca
+  palette:
+    - scheme: default
+      primary: indigo      # color bàsic
+      accent: deep purple  # color secundari
+  font:
+    text: Roboto
+    code: Fira Code
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+
+# -----------------------------
+# Extensió per al codi
+# -----------------------------
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+# -----------------------------
+# Navegació
+# -----------------------------
+nav:
+  - Inici: index.md
+  - Scripts de Gradle: ScriptsGraddle.md
+  - Directoris de codi fint: Directoris.md
+  - AndroidManifest: manifest.md
+
+# -----------------------------
+# Altres ajustos
+# -----------------------------
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/exemple/proj-android
+    - icon: fontawesome/brands/android
+      link: https://developer.android.com
